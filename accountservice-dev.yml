@@ -1,22 +1,3 @@
-spring:
-  application:
-    name: accountservice
-  datasource:
-    url: jdbc:mysql://localhost:3306/accountdb
-    username: root
-    password: passw0rd
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-    hibernate:
-      ddl-auto: update
-
-customer:
-  service:
-    endpoint: http://customerservice/customers/
-
-
-server:
-  port: 8081
+microservice:
+  deployment:
+    rfc: RFC-ACCOUNT-SERVICE-9828

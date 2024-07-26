@@ -1,0 +1,16 @@
+server:
+  port: 9095
+spring:
+  application:
+    name: apigateway
+  cloud:
+    gateway:
+      routes:
+        - id: ACCOUNTSERVICE
+          uri: lb://ACCOUNTSERVICE
+          predicates:
+            - Path=/account/**
+        - id: CUSTOMERSERVICE
+          uri: lb://CUSTOMERSERVICE
+          predicates:
+            - Path=/customers/**

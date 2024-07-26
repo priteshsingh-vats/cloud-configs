@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: customerservice
+  datasource:
+    url: jdbc:mysql://localhost:3306/customerdb
+    username: root
+    password: passw0rd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+account:
+  service:
+    uri: http://accountservice/account/customer/
+
+
+server:
+  port: 8082
+
+

@@ -2,9 +2,9 @@ spring:
   application:
     name: customerservice
   datasource:
-    url: jdbc:mysql://localhost:3306/customerdb
+    url: jdbc:mysql://mysql:3306/customerdb
     username: root
-    password: passw0rd
+    password: Orthopoda@2947
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     properties:

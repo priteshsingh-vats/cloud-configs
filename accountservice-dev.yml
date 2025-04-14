@@ -16,6 +16,9 @@ spring:
 customer:
   service:
     endpoint: http://customerservice/customers/
+microservice:
+  deployment:
+    rfc: RFC-9023
 
 
 server:

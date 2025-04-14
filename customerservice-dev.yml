@@ -16,6 +16,9 @@ spring:
 account:
   service:
     uri: http://accountservice/account/customer/
+microservice:
+  deployment:
+    rfc: RFC-9023
 
 
 server:
